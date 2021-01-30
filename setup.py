@@ -16,7 +16,7 @@ print (path_model)
 sys.path.append(path_this)
 sys.path.append(path_model)
 
-SPACY_MODEL_NAMES = ["id_maslahah_ner", "id_maslahah_sentiment"]
+SPACY_MODEL_NAMES = ["id_maslahah_ner", "id_maslahah_sentiment", "id_industry_4"]
 HTML_WRAPPER = """<div style="overflow-x: auto; border: 1px solid #e6e9ef; border-radius: 0.25rem; padding: 1rem; margin-bottom: 2.5rem">{}</div>"""
 
 
@@ -39,6 +39,8 @@ spacy_model = st.sidebar.selectbox("Model name", SPACY_MODEL_NAMES)
 model_load_state = st.info(f"Loading model '{spacy_model}'...")
 if spacy_model == "id_maslahah_ner":
     DEFAULT_TEXT = "Joko Widodo adalah presiden dari Partai PDI-Perjuangan. Beliau beristana di Jakarta."
+if spacy_model == "id_industry_4":
+    DEFAULT_TEXT = "Work with computer data systems such as Geographic Information Systems (GIS)."
 elif spacy_model == "id_maslahah_sentiment":
     DEFAULT_TEXT = "Aku suka banget sama ini. Cuma ini cleanser yang cocok buat aku. Aku udah sering banget gonta-ganti cleanser karena wajahku yang penuh jerawat. Aku udah coba yang low-end dan high-end sekalipun tapi tetep gak ada yang sebagus ini. Karena produknya gentle jadi gak bikin iritasi diwajah, kebanyakan produk cleanser lain yang harsh untuk wajah justru dapat menyebabkan iritasi sehingga munculah jerawat. Very recommended!"
 nlp = load_model(os.path.join(path_model, spacy_model))
