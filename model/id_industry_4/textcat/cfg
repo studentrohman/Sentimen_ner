@@ -1,0 +1,15 @@
+{
+  "exclusive_classes":true,
+  "architecture":"simple_cnn",
+  "labels":[
+    "Digital Skills",
+    "Thinking Skills",
+    "Personal Skills",
+    "Technological Skills",
+    "Social Skills'",
+    "Programming Skills",
+    "Others Skills"
+  ],
+  "pretrained_vectors":null,
+  "pretrained_dims":null
+}
