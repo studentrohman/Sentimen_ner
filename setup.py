@@ -1,9 +1,5 @@
 # coding: utf-8
-"""
-Example of a Streamlit app for an interactive spaCy model visualizer.
-Usage:
-streamlit run app.py
-"""
+
 from __future__ import unicode_literals
 import os
 import sys
