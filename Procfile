@@ -1,1 +1,1 @@
-bot: python3 setup.py
+Aplikasi: python setup.py
