@@ -1,1 +1,1 @@
-Aplikasi: python setup.py
+web: sh setup.sh && streamlit run  setup.py
